@@ -1,4 +1,4 @@
-# cyan's corne firmware
+# cyan's corne zmk firmware
 
 ## external resources
 
@@ -7,6 +7,6 @@
 - [nickcoutsos' keymap-editor](https://github.com/nickcoutsos/keymap-editor)
 - [caksoylar's keymap-drawer](https://github.com/caksoylar/keymap-drawer)
 
-## keymap
+## keymap (generated via [keymap-drawer](https://github.com/caksoylar/keymap-drawer))
 
 ![corne keymap](keymap-drawer/corne.svg)
