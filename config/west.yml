@@ -24,9 +24,9 @@ manifest:
       revision: main
 
     # zmk-helpers
-    # - name: zmk-helpers
-    #   remote: urob
-    #   revision: main
+    - name: zmk-helpers
+      remote: urob
+      revision: main
 
     # zmk-leader-key
     - name: zmk-leader-key
