@@ -10,6 +10,17 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+#define BASE 0
+#define NAV 1
+#define FN 2
+#define NUM 3
+#define SYS 4
+#define MOUSE 5
+
+/* Global defaults */
+
+#define QUICK_TAP_MS 175
+
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -63,3 +74,5 @@
         };
     };
 };
+
+/* vim: set ft=c: */
