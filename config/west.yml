@@ -1,18 +1,30 @@
+# See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
 manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+
+    # nice-view-gem
     - name: m165437
       url-base: https://github.com/M165437
+
+    # zmk-helpers
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+
+    # nice-view-gem
     - name: nice-view-gem
       remote: m165437
+      revision: main
+
+    # zmk-helpers
+    - name: zmk-helpers
+      remote: urob
       revision: main
   self:
     path: config
