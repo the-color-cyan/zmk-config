@@ -8,9 +8,10 @@ manifest:
     - name: m165437
       url-base: https://github.com/M165437
 
-    # zmk-helpers
+    # zmk-helpers, zmk-leader-key
     - name: urob
       url-base: https://github.com/urob
+
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -26,5 +27,11 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
+
+    # zmk-leader-key
+    - name: zmk-leader-key
+      remote: urob
+      revision: main
+
   self:
     path: config
