@@ -67,8 +67,8 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // right hand hrms
 
 /* HACK: make hrm combos tap only */
 #define ZMK_COMBO_8(NAME, TAP, POS, LAYERS, COMBO_MS, IDLE_MS, HOLD, SIDE) \
-  MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS) \
-  ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
+    MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS) \ 
+    ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
 
 / {
     keymap {
