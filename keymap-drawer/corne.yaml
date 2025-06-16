@@ -1,7 +1,50 @@
 layout: {zmk_keyboard: corne}
 layers:
-  base: [TAB, Q, W, F, P, B, J, L, U, Y, ;, BSPC, LCTRL, A, R, S, T, G, M, N, E, I, O, '''', LSHFT, Z, X, C, D, V, K, H, ',', ., /, ESC, LGUI, lower, SPACE, RET,
-    raise, RALT]
+  base: [TAB, Q, W, F, P, B, J, L, U, Y, ;, BSPC, LCTRL, A, R, S, T, G, M, N, E, I, O, '''', LSHFT, Z, X, C, D, V, K, H, ',', ., /, ESC, LGUI, num, SPACE, RET, lower,
+    RALT]
+  num:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
   lower:
   - TAB
   - '1'
@@ -40,10 +83,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LGUI
-  - {type: held}
+  - {t: ▽, type: trans}
   - SPACE
   - RET
-  - {t: ▽, type: trans}
+  - {type: held}
   - RALT
   raise:
   - TAB
@@ -86,5 +129,5 @@ layers:
   - {t: ▽, type: trans}
   - SPACE
   - RET
-  - {type: held}
+  - {t: ▽, type: trans}
   - RALT
