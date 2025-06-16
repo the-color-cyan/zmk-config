@@ -101,7 +101,7 @@ MASK_MODS(masked_end, (MOD_LCTL), &kp END)
 
 /* keymap */
 
-#define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)
+#define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH) \
     ZMK_LAYER(name, LT RT LM RM LB RB LH RH)
 
 ZMK_BASE_LAYER(base,
