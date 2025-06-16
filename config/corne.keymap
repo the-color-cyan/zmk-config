@@ -39,7 +39,14 @@
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp D  &kp V        &kp K    &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                          &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
             >;
-        };
+        };            
+
+        num_layer {
+            display-name = "num";
+
+        bindings = <
+&kp 
+    }
 
         lower_layer {
             display-name = "lower";
@@ -74,5 +81,16 @@
         };
     };
 };
+
+// template layer keymap
+//╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+    &kp none      &kp none      &kp none      &kp none      &kp none        &kp none      &kp none      &kp none      &kp none      &kp none     
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &kp none      &kp none      &kp none      &kp none      &kp none        &kp none      &kp none     &kp none       &kp none      &kp none     
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &kp none      &kp none      &kp none      &kp none      &kp none        &kp none      &kp none      &kp none      &kp none      &kp none     
+//╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
+                                              &kp none      &kp none        &kp none      &kp none
+//                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯
 
 /* vim: set ft=c: */
