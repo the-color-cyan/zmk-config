@@ -1,9 +1,134 @@
 layout: {zmk_keyboard: corne}
 layers:
-  base: [Tab, Q, W, F, P, B, J, L, U, Y, ;, Bspc, Ctrl, A, R, S, T, G, M, N, E, I, O, '''', Shift, Z, X, C, D, V, K, H, ',', ., /, Esc, Gui, lower, Spc, Enter, raise,
-    Alt]
-  num: ['', '', '7', '8', '9', '', '', '', '', '', '', '', '', '', '4', '5', '6', '', '', '', '', '', '', '', '', '', '1', '2', '3', '', '', '', '', '', '', '', '',
-    '', '', '', '', '']
+  base:
+  - Tab
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - Bspc
+  - Ctrl
+  - {t: A, h: Gui}
+  - {t: R, h: Alt}
+  - {t: S, h: Shift}
+  - {t: T, h: Ctrl}
+  - G
+  - M
+  - {t: N, h: Ctrl}
+  - {t: E, h: Shift}
+  - {t: I, h: Alt}
+  - {t: O, h: Gui}
+  - ''''
+  - Shift
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - Esc
+  - Gui
+  - nav
+  - Spc
+  - Enter
+  - lower
+  - Alt
+  num:
+  - {type: trans}
+  - {type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: '0', h: Gui}
+  - {t: '4', h: Alt}
+  - {t: '5', h: Shift}
+  - {t: '6', h: Ctrl}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  nav:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - PgUp
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: Gui, h: sticky}
+  - {t: Alt, h: sticky}
+  - {t: Shift, h: sticky}
+  - {t: Ctrl, h: sticky}
+  - {type: trans}
+  - ←
+  - ↓
+  - ↑
+  - →
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - PG DOWN
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   lower:
   - Tab
   - '1'
@@ -42,10 +167,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - Gui
-  - {type: held}
+  - {type: trans}
   - Spc
   - Enter
-  - {type: trans}
+  - {type: held}
   - Alt
   raise:
   - Tab
@@ -88,5 +213,5 @@ layers:
   - {type: trans}
   - Spc
   - Enter
-  - {type: held}
+  - {type: trans}
   - Alt
