@@ -1,11 +1,11 @@
 layout: {zmk_keyboard: corne}
 layers:
-  base: [TAB, Q, W, F, P, B, J, L, U, Y, ;, BSPC, LCTRL, A, R, S, T, G, M, N, E, I, O, '''', LSHFT, Z, X, C, D, V, K, H, ',', ., /, ESC, LGUI, lower, SPACE, RET,
-    raise, RALT]
+  base: [Tab, Q, W, F, P, B, J, L, U, Y, ;, Bspc, Ctrl, A, R, S, T, G, M, N, E, I, O, '''', Shift, Z, X, C, D, V, K, H, ',', ., /, Esc, Gui, lower, Spc, Enter, raise,
+    Alt]
   num: ['', '', '7', '8', '9', '', '', '', '', '', '', '', '', '', '4', '5', '6', '', '', '', '', '', '', '', '', '', '1', '2', '3', '', '', '', '', '', '', '', '',
     '', '', '', '', '']
   lower:
-  - TAB
+  - Tab
   - '1'
   - '2'
   - '3'
@@ -16,39 +16,39 @@ layers:
   - '8'
   - '9'
   - '0'
-  - BSPC
+  - Bspc
   - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
   - {t: BT, h: '4'}
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LSHFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LGUI
+  - ←
+  - ↓
+  - ↑
+  - →
+  - {type: trans}
+  - {type: trans}
+  - Shift
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - Gui
   - {type: held}
-  - SPACE
-  - RET
-  - {t: ▽, type: trans}
-  - RALT
+  - Spc
+  - Enter
+  - {type: trans}
+  - Alt
   raise:
-  - TAB
+  - Tab
   - '!'
   - '@'
   - '#'
@@ -59,34 +59,34 @@ layers:
   - '*'
   - (
   - )
-  - BSPC
-  - LCTRL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Bspc
+  - Ctrl
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - '-'
   - '='
-  - '['
-  - ']'
+  - {t: '[', right: '{'}
+  - {t: ']', right: '}'}
   - \
   - '`'
-  - LSHFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Shift
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   - _
   - +
   - '{'
   - '}'
   - '|'
   - '~'
-  - LGUI
-  - {t: ▽, type: trans}
-  - SPACE
-  - RET
+  - Gui
+  - {type: trans}
+  - Spc
+  - Enter
   - {type: held}
-  - RALT
+  - Alt
