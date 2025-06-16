@@ -19,8 +19,9 @@
 
 #define BASE 0
 #define NUM 1
-#define LOWER 2
-#define RAISE 3
+#define NAV 2
+#define LOWER 3
+#define RAISE 4
 
 #define XXX &none
 #define ___ &trans
