@@ -71,76 +71,87 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // right hand hrms
     MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS) \
     ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
 
-/ {
-    keymap {
-        compatible = "zmk,keymap";
+/* NAV layer */
 
-        default_layer {
-            display-name = "base";
-            bindings = <
+/* trigger tap-action on all interrupts */
+#define MT_CORE \
+    flavor = "tap-preferred"; \
+    tapping-term-ms = <220>; \
+    quick-tap-ms = <220>; \
+    hold-trigger-key-positions = <0>;
+
+&mt { MT_CORE };
+
+ZMK_HOLD_TAP(mt_home, bindings = <&masked_home>, <&kp>; MT_CORE)
+ZMK_HOLD_TAP(mt_end, bindings = <&masked_end>, <&kp>; MT_CORE)
+
+#define NAV_LEFT  &mt_home 0   LEFT  // tap: left  | long-tap: start of line.
+#define NAV_RIGHT &mt_end 0    RIGHT // tap: right | long-tap: end   of line.
+#define NAV_UP    &mt LC(HOME) UP    // tap: up    | long-tap: start of doc.
+#define NAV_DOWN  &mt LC(END)  DOWN  // tap: down  | long-tap: end   of doc.
+#define NAV_BSPC  &mt LC(BSPC) BSPC  // tap: bspc  | long-tap: delete word bwd.
+#define NAV_DEL   &mt LC(DEL)  DEL   // tap: del   | long-tap: delete word fwd.
+
+// mask CTRL on left/right hold to avoid accidental jumps to start/end of doc.
+#define MASK_MODS(NAME, MODS, BINDING)                                         \
+    ZMK_MOD_MORPH(NAME, bindings = <BINDING>, <BINDING>; mods = <MODS>;)
+
+MASK_MODS(masked_home, (MOD_LCTL), &kp HOME)
+MASK_MODS(masked_end, (MOD_LCTL), &kp END)
+
+/* keymap */
+
+#define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)
+    ZMK_LAYER(name, LT RT LM RM LB RB LH RH)
+
+ZMK_BASE_LAYER(base,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-   &kp TAB       &kp Q         &kp W         &kp F         &kp P         &kp B           &kp J         &kp L         &kp U         &kp Y         &kp SEMI      &kp BSPC
+   &kp TAB       &kp Q         &kp W         &kp F         &kp P         &kp B        ,  &kp J         &kp L         &kp U         &kp Y         &kp SEMI      &kp BSPC     ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-   &kp LCTRL     &hml LGUI A   &hml LALT R   &hml LSHFT S  &hml LCTRL T  &kp G           &kp M         &hmr LCTRL N  &hmr RSHFT E  &hmr LALT I   &hmr LGUI O   &kp SQT
+   &kp LCTRL     &hml LGUI A   &hml LALT R   &hml LSHFT S  &hml LCTRL T  &kp G        ,  &kp M         &hmr LCTRL N  &hmr RSHFT E  &hmr LALT I   &hmr LGUI O   &kp SQT      ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-   &kp LSHFT     &kp Z         &kp X         &kp C         &kp D         &kp V           &kp K         &kp H         &kp COMMA     &kp DOT       &kp FSLH      &kp ESC
+   &kp LSHFT     &kp Z         &kp X         &kp C         &kp D         &kp V        ,  &kp K         &kp H         &kp COMMA     &kp DOT       &kp FSLH      &kp ESC      ,
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                             &mo NAV       &mo LOWER     &kp SPACE       &kp RET       &mo RAISE     &mo NUM
+                                             &mo NAV       &mo LOWER     &kp SPACE    ,  &kp RET       &mo RAISE     &mo NUM
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
-            >;
-        };
+)
 
-        num_layer {
-            display-name = "num";
-            bindings = <
+ZMK_BASE_LAYER(num,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-   ___           ___           &kp N7        &kp N8        &kp N9        ___             ___           ___           ___           ___           ___           ___
+   ___           ___           &kp N7        &kp N8        &kp N9        ___          ,  ___           ___           ___           ___           ___           ___          ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-   ___           &hml LGUI N0  &hml LALT N4  &hml LSHFT N5 &hml LCTRL N6 ___             ___           ___           ___           ___           ___           ___
+   ___           &hml LGUI N0  &hml LALT N4  &hml LSHFT N5 &hml LCTRL N6 ___          ,  ___           ___           ___           ___           ___           ___          ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-   ___           ___           &kp N1        &kp N2        &kp N3        ___             ___           ___           ___           ___           ___           ___
+   ___           ___           &kp N1        &kp N2        &kp N3        ___          ,  ___           ___           ___           ___           ___           ___          ,
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                             ___           ___           ___             ___           ___           ___
+                                             ___           ___           ___          ,  ___           ___           ___
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
-            >;
-        };
+)
 
-        nav_layer {
-            display-name = "nav";
-            bindings = <
+ZMK_BASE_LAYER(nav,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-   ___           ___           ___           ___           ___           ___             &kp PG_UP     ___           ___           ___           ___           ___
+   ___           ___           ___           ___           ___           ___          ,  &kp PG_UP     ___           ___           ___           ___           ___          ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-   ___           &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     ___             &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     ___           ___
+   ___           &sk LGUI      &sk LALT      &sk LSHFT     &sk LCTRL     ___          ,  &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     ___           ___          ,
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-   ___           ___           ___           ___           ___           ___             &kp PG_DN   ___           ___           ___           ___           ___
+   ___           ___           ___           ___           ___           ___          ,  &kp PG_DN     ___           ___           ___           ___           ___          ,
 //╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                             ___           ___           ___             ___           ___           ___
+                                             ___           ___           ___          ,  ___           ___           ___
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
-            >; 
-        };
+)
 
-        lower_layer {
-            display-name = "lower";
-            bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  ___     ___   
-&kp LSHFT   ___           ___           ___           ___           ___             ___       ___       ___       ___        ___     ___   
-                                        &kp LGUI      ___           &kp SPACE       &kp RET   ___       &kp RALT
-            >;
-        };
+ZMK_BASE_LAYER(lower,
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5       ,   &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC ,
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4 ,   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  ___     ___      ,
+&kp LSHFT   ___           ___           ___           ___           ___          ,   ___       ___       ___       ___        ___     ___      ,
+                                        &kp LGUI      ___           &kp SPACE    ,   &kp RET   ___       &kp RALT
+)
 
-        raise_layer {
-            display-name = "raise";
-            bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  ___       ___     ___       ___       ___          &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  ___       ___     ___       ___       ___          &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  ___       &kp SPACE    &kp RET    ___        &kp RALT
-            >;
-        };
-    };
-};
+ZMK_BASE_LAYER(raise,
+&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT ,   &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC  ,
+&kp LCTRL  ___       ___     ___       ___       ___       ,   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE ,
+&kp LSHFT  ___       ___     ___       ___       ___       ,   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE ,
+                             &kp LGUI  ___       &kp SPACE ,   &kp RET    ___        &kp RALT
 
 /* template layer keymap
 
@@ -155,4 +166,5 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // right hand hrms
 //                                          ╰─────────────┴─────────────┴─────────────╯ ╰─────────────┴─────────────┴─────────────╯
 
 */
+
 /* vim: set ft=c: */
