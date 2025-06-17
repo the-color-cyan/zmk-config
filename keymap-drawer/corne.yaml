@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne}
 layers:
   base:
-  - Tab
+  - '='
   - Q
   - W
   - F
@@ -25,7 +25,7 @@ layers:
   - {t: I, h: Alt}
   - {t: O, h: Gui}
   - ''''
-  - Shift
+  - '-'
   - Z
   - X
   - C
@@ -42,43 +42,43 @@ layers:
   - Spc
   - Enter
   - raise
-  - num
-  num:
+  - numsym
+  numsym:
   - {type: trans}
   - {type: trans}
   - '7'
   - '8'
   - '9'
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - '*'
+  - (
+  - )
+  - '!'
+  - $
+  - '|'
   - {type: trans}
   - {type: trans}
   - {t: '0', h: Gui}
   - {t: '4', h: Alt}
   - {t: '5', h: Shift}
   - {t: '6', h: Ctrl}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - .
+  - {t: '[', right: '{'}
+  - {t: ']', h: Ctrl}
+  - {t: '@', h: Shift}
+  - {t: '%', h: Alt}
+  - {t: '&', h: Gui}
+  - '`'
   - {type: trans}
   - {type: trans}
   - '1'
   - '2'
   - '3'
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - /
+  - '{'
+  - '}'
+  - '#'
+  - ^
+  - \
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -93,10 +93,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
+  - Tab
   - PgUp
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: Del, h: Ctl+Del}
+  - {t: Bspc, h: Ctl+Bspc}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -105,10 +105,11 @@ layers:
   - {t: Shift, h: sticky}
   - {t: Ctrl, h: sticky}
   - {type: trans}
-  - ←
-  - ↓
-  - ↑
-  - →
+  - {t: ←, h: Home}
+  - {t: ↓, h: Ctl+End}
+  - {t: ↑, h: Ctl+Home}
+  - {t: →, h: End}
+  - Enter
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -116,9 +117,8 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
+  - Ins
   - PgDn
-  - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
