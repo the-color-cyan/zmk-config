@@ -13,7 +13,7 @@ layers:
   - Y
   - ;
   - Bspc
-  - Ctrl
+  - Tab
   - {t: A, h: Gui}
   - {t: R, h: Alt}
   - {t: S, h: Shift}
