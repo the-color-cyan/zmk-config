@@ -38,10 +38,10 @@ layers:
   - /
   - Esc
   - nav
-  - lower
+  - fn
   - Spc
   - Enter
-  - raise
+  - lower
   - numsym
   numsym:
   - {type: trans}
@@ -129,6 +129,49 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
+  fn:
+  - {type: trans}
+  - PRSCRN
+  - F7
+  - F8
+  - F9
+  - F10
+  - BRI DN
+  - BRI UP
+  - $$mdi:volume-high$$
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - SLCK
+  - F4
+  - F5
+  - F6
+  - F11
+  - $$mdi:skip-backward$$
+  - $$mdi:play-pause$$
+  - $$mdi:volume-off$$
+  - $$mdi:skip-forward$$
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - PAUSE BREAK
+  - F1
+  - F2
+  - F3
+  - F12
+  - RW
+  - FF
+  - $$mdi:volume-medium$$
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
   lower:
   - Tab
   - '1'
@@ -167,10 +210,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - Gui
-  - {type: held}
+  - {type: trans}
   - Spc
   - Enter
-  - {type: trans}
+  - {type: held}
   - Alt
   raise:
   - Tab
@@ -213,5 +256,5 @@ layers:
   - {type: trans}
   - Spc
   - Enter
-  - {type: held}
+  - {type: trans}
   - Alt
