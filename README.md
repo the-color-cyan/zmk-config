@@ -10,3 +10,13 @@
 ## keymap (generated via [keymap-drawer](https://github.com/caksoylar/keymap-drawer))
 
 ![corne keymap](keymap-drawer/corne.svg)
+
+## advanced functions
+
+- [timeless home row mods](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
+
+- hold-taps on nav layer
+  - taps register as arrow keys
+    - holds register as `HOME`, `END`, and `Beginning/End of document`
+  - taps register as `BACKSPACE` and `DEL`
+    - holds register as `Delete word backward/forward`
