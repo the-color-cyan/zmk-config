@@ -14,7 +14,6 @@
 ## advanced functions
 
 - [timeless home row mods](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
-
 - hold-taps on nav layer
   - taps register as arrow keys
     - holds register as `HOME`, `END`, and `Beginning/End of document`
