@@ -131,7 +131,7 @@ layers:
   - {type: trans}
   fn:
   - {type: trans}
-  - PRSCRN
+  - PSCRN
   - F7
   - F8
   - F9
