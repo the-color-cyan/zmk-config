@@ -1,10 +1,8 @@
 name: Build ZMK firmware
 on:
   push:
-    paths-ignore:
-      - "**.md"
-      - ".github/**"
-      - "keymap-drawer/**"
+    paths:
+      - "config/**"
   pull_request:
   workflow_dispatch:
 
