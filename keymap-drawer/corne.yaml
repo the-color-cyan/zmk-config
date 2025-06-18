@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - Esc
-  - '4'
+  - {t: Esc, h: '4'}
   - {t: Magic, h: Shift}
   - {t: Spc, h: '2', s: Sentence}
   - {t: Enter, h: '1'}
   - {t: Magic, h: Shift}
-  - '3'
+  - {t: Esc, h: '3'}
   '1':
   - {type: trans}
   - {type: trans}
@@ -61,7 +61,7 @@ layers:
   - {t: '4', h: Alt}
   - {t: '5', h: Shift}
   - {t: '6', h: Ctrl}
-  - .
+  - /
   - {t: '[', right: '{'}
   - {t: ']', h: Ctrl}
   - {t: '@', h: Shift}
@@ -73,7 +73,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - /
+  - .
   - '{'
   - '}'
   - '#'
