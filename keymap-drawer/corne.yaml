@@ -37,12 +37,12 @@ layers:
   - .
   - /
   - Esc
-  - {t: Esc, h: '4'}
+  - {t: Esc, h: Sys}
   - {t: Magic, h: Shift}
-  - {t: Spc, h: '2', s: Sentence}
+  - {t: Spc, h: Nav, s: Sentence}
   - {t: Enter, h: '1'}
   - {t: Magic, h: Shift}
-  - {t: Esc, h: '3'}
+  - {t: Esc, h: Fn}
   '1':
   - {type: trans}
   - {type: trans}
@@ -86,7 +86,7 @@ layers:
   - {type: held}
   - {type: trans}
   - {type: trans}
-  '2':
+  Nav:
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -129,7 +129,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  '3':
+  Fn:
   - {type: trans}
   - PSCRN
   - F7
@@ -172,7 +172,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
-  '4':
+  Sys:
   - BT CLR
   - BT 1
   - BT 2
