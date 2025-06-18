@@ -12,7 +12,7 @@ layers:
   - U
   - Y
   - ;
-  - Bspc
+  - {t: Bspc, s: Del}
   - Tab
   - {t: A, h: Gui}
   - {t: R, h: Alt}
@@ -38,10 +38,10 @@ layers:
   - /
   - Esc
   - sys
-  - nav
-  - Spc
-  - Enter
-  - numsym
+  - {t: Magic, h: Shift}
+  - {t: Spc, h: nav, s: Sentence}
+  - {t: Enter, h: numsym}
+  - {t: Magic, h: Shift}
   - fn
   numsym:
   - {type: trans}
@@ -83,8 +83,8 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
   - {type: held}
+  - {type: trans}
   - {type: trans}
   nav:
   - {type: trans}
@@ -124,8 +124,8 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: held}
   - {type: trans}
+  - {type: held}
   - {type: trans}
   - {type: trans}
   - {type: trans}
