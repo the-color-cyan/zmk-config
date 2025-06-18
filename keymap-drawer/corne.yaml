@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne}
 layers:
-  '0':
+  Base:
   - '='
   - Q
   - W
@@ -40,10 +40,10 @@ layers:
   - {t: Esc, h: Sys}
   - {t: Magic, h: Shift}
   - {t: Spc, h: Nav, s: Sentence}
-  - {t: Enter, h: '1'}
+  - {t: Enter, h: Numsym}
   - {t: Magic, h: Shift}
   - {t: Esc, h: Fn}
-  '1':
+  Numsym:
   - {type: trans}
   - {type: trans}
   - '7'
