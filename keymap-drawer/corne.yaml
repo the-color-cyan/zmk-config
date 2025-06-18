@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne}
 layers:
-  base:
+  '0':
   - '='
   - Q
   - W
@@ -37,13 +37,13 @@ layers:
   - .
   - /
   - Esc
-  - sys
+  - '4'
   - {t: Magic, h: Shift}
-  - {t: Spc, h: nav, s: Sentence}
-  - {t: Enter, h: numsym}
+  - {t: Spc, h: '2', s: Sentence}
+  - {t: Enter, h: '1'}
   - {t: Magic, h: Shift}
-  - fn
-  numsym:
+  - '3'
+  '1':
   - {type: trans}
   - {type: trans}
   - '7'
@@ -86,7 +86,7 @@ layers:
   - {type: held}
   - {type: trans}
   - {type: trans}
-  nav:
+  '2':
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -129,7 +129,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  fn:
+  '3':
   - {type: trans}
   - PSCRN
   - F7
@@ -172,7 +172,7 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: held}
-  sys:
+  '4':
   - BT CLR
   - BT 1
   - BT 2
