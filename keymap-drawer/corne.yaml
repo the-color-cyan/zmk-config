@@ -228,7 +228,7 @@ layers:
   - BT 2
   - BT 3
   - BT 4
-  - {t: BT, h: '4'}
+  - BT 5
   - BT CLR
   - {t: Clmk, h: toggle}
   - {type: trans}
