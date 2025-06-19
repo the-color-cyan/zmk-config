@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne}
 layers:
-  Base:
+  Clmk:
   - '='
   - Q
   - W
@@ -43,6 +43,51 @@ layers:
   - {t: Enter, h: Numsym}
   - {t: Magic, h: Shift}
   - {t: Esc, h: Fn}
+  Qwty:
+  - '='
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: Bspc, s: Del}
+  - Tab
+  - {t: A, h: Gui}
+  - {t: S, h: Alt}
+  - {t: D, h: Shift}
+  - {t: F, h: Ctrl}
+  - G
+  - H
+  - {t: J, h: Ctrl}
+  - {t: K, h: Shift}
+  - {t: L, h: Alt}
+  - {t: ;, h: Gui}
+  - ''''
+  - '-'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - Esc
+  - {t: Esc, h: Sys}
+  - {t: Magic, h: Shift}
+  - {t: Spc, h: Nav, s: Sentence}
+  - {t: Enter, h: Numsym}
+  - {t: Magic, h: Shift}
+  - {t: Esc, h: Fn}
+  Game: [Tab, Q, W, E, R, T, Y, U, I, O, P, Bspc, Shift, A, S, D, F, G, H, J, K, L, ;, '''', Ctrl, Z, X, C, V, B, N, M, ',', ., /, Esc, Sys, Alt, Spc, Spc, Enter,
+    Fn]
   Numsym:
   - {type: trans}
   - {type: trans}
@@ -197,9 +242,9 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {type: trans}
-  - {type: trans}
-  - {type: trans}
+  - {t: Clmk, h: toggle}
+  - {t: Qwty, h: toggle}
+  - {t: Game, h: toggle}
   - {type: trans}
   - {type: trans}
   - {type: trans}
