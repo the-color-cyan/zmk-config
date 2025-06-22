@@ -264,7 +264,7 @@ combos:
 - p: [2, 3]
   k: Esc
   l: [Clmk, Qwty, Nav, Numsym]
-- p: [8, 33]
+- p: [8, 9]
   k: Esc
   l: [Clmk, Qwty, Nav, Numsym]
 - p: [32, 33]
