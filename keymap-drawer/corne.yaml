@@ -260,3 +260,21 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
+combos:
+- p: [2, 3]
+  k: Esc
+  l: [Clmk, Qwty, Nav, Numsym]
+- p: [32, 33]
+  k: Esc
+  l: [Clmk, Qwty, Nav, Numsym]
+- p: [26, 28]
+  k: Cut
+  l: [Clmk, Qwty, Nav, Numsym]
+  a: bottom
+  o: 0.15
+- p: [26, 27]
+  k: Copy
+  l: [Clmk, Qwty, Nav, Numsym]
+- p: [27, 28]
+  k: Paste
+  l: [Clmk, Qwty, Nav, Numsym]
