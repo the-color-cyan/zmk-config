@@ -33,7 +33,7 @@
 ![corne keymap](keymap-drawer/corne.svg)
    
 ## planned
-- Combos
+- ~~Combos~~ implemented
 - ~~QWERTY and gaming layers~~ implemented
 - Mouse movement
 - OS-navigation (GUI + ..., Alt + Tab, etc.)
