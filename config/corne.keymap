@@ -74,6 +74,8 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // right hand hrms
     MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS) \
     ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
 
+#include "combos.dtsi" // must be sourced after HRM combo hack
+
 /* NAV LAYER */
 
 // trigger tap-action on all interrupts 
