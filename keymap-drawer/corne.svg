@@ -364,6 +364,18 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
 <text x="224" y="144" class="combo tap">Paste</text>
 </g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
+<text x="112" y="42" class="combo tap">!</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="154" y="18" width="28" height="26" class="combo"/>
+<text x="168" y="32" class="combo tap">@</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
+<text x="224" y="32" class="combo tap">#</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 331)" class="layer-Qwty">
@@ -574,6 +586,18 @@ path.combo { stroke: #7f7f7f; }
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
 <text x="224" y="144" class="combo tap">Paste</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
+<text x="112" y="42" class="combo tap">!</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="154" y="18" width="28" height="26" class="combo"/>
+<text x="168" y="32" class="combo tap">@</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
+<text x="224" y="32" class="combo tap">#</text>
 </g>
 </g>
 </g>
@@ -937,6 +961,18 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
 <text x="224" y="144" class="combo tap">Paste</text>
 </g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
+<text x="112" y="42" class="combo tap">!</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="154" y="18" width="28" height="26" class="combo"/>
+<text x="168" y="32" class="combo tap">@</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
+<text x="224" y="32" class="combo tap">#</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1323)" class="layer-Nav">
@@ -1110,6 +1146,18 @@ path.combo { stroke: #7f7f7f; }
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
 <text x="224" y="144" class="combo tap">Paste</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
+<text x="112" y="42" class="combo tap">!</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="154" y="18" width="28" height="26" class="combo"/>
+<text x="168" y="32" class="combo tap">@</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
+<text x="224" y="32" class="combo tap">#</text>
 </g>
 </g>
 </g>

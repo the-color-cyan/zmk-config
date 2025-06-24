@@ -275,3 +275,12 @@ combos:
 - p: [27, 28]
   k: Paste
   l: [Clmk, Qwty, Nav, Numsym]
+- p: [1, 2]
+  k: '!'
+  l: [Clmk, Qwty, Nav, Numsym]
+- p: [2, 3]
+  k: '@'
+  l: [Clmk, Qwty, Nav, Numsym]
+- p: [3, 4]
+  k: '#'
+  l: [Clmk, Qwty, Nav, Numsym]
