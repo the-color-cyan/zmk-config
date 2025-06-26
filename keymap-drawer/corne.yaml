@@ -86,7 +86,7 @@ layers:
   - {t: Enter, h: Numsym}
   - {t: Magic, h: Shift}
   - {t: Esc, h: Fn}
-  Game: [Tab, Q, W, E, R, T, Y, U, I, O, P, Bspc, Shift, A, S, D, F, G, H, J, K, L, ;, '''', Ctrl, Z, X, C, V, B, N, M, ',', ., /, Esc, Sys, Alt, Spc, Spc, Enter,
+  Game: [Tab, Q, W, E, R, T, Y, U, I, O, P, Bspc, Shift, A, S, D, F, G, H, J, K, L, ;, '''', Ctrl, Z, X, C, V, B, N, M, ',', ., /, Esc, Sys, Alt, Spc, Enter, Gui,
     Fn]
   Numsym:
   - {type: trans}
