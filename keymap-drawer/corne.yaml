@@ -88,6 +88,49 @@ layers:
   - {t: Esc, h: Fn}
   Game: [Tab, Q, W, E, R, T, Y, U, I, O, P, Bspc, Shift, A, S, D, F, G, H, J, K, L, ;, '''', Ctrl, Z, X, C, V, B, N, M, ',', ., /, Esc, Sys, Alt, Spc, Enter, Gui,
     Fn]
+  VertGame:
+  - ←
+  - Esc
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - D
+  - C
+  - ↓
+  - ↑
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - S
+  - X
+  - →
+  - Tab
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - A
+  - Z
+  - Sys
+  - Alt
+  - Spc
+  - Enter
+  - Gui
+  - Fn
   Numsym:
   - {type: trans}
   - {type: trans}
@@ -231,7 +274,7 @@ layers:
   - BT 5
   - BT CLR
   - {t: Clmk, h: toggle}
-  - {type: trans}
+  - {t: VertGame, h: toggle}
   - {type: trans}
   - {type: trans}
   - {type: trans}
