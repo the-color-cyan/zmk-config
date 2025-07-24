@@ -21,7 +21,7 @@ layers:
   - G
   - M
   - {t: N, h: Gui}
-  - {t: E, h: Shift}
+  - {t: E, h: Ctrl}
   - {t: I, h: Alt}
   - {t: O, h: Shift}
   - ''''
@@ -64,7 +64,7 @@ layers:
   - G
   - H
   - {t: J, h: Gui}
-  - {t: K, h: Shift}
+  - {t: K, h: Ctrl}
   - {t: L, h: Alt}
   - {t: ;, h: Shift}
   - ''''
@@ -111,7 +111,7 @@ layers:
   - /
   - '@'
   - {t: (, h: Gui}
-  - {t: ), h: Shift}
+  - {t: ), h: Ctrl}
   - {t: '%', h: Alt}
   - {t: '&', h: Shift}
   - '`'
@@ -197,7 +197,7 @@ layers:
   - F11
   - {type: trans}
   - {t: Gui, h: sticky}
-  - {t: Shift, h: sticky}
+  - {t: Ctrl, h: sticky}
   - {t: Alt, h: sticky}
   - {t: Shift, h: sticky}
   - {type: trans}
