@@ -14,16 +14,16 @@ layers:
   - ;
   - {t: Bspc, s: Del}
   - Tab
-  - {t: A, h: Gui}
+  - {t: A, h: Shift}
   - {t: R, h: Alt}
-  - {t: S, h: Shift}
-  - {t: T, h: Ctrl}
+  - {t: S, h: Ctrl}
+  - {t: T, h: Gui}
   - G
   - M
-  - {t: N, h: Ctrl}
+  - {t: N, h: Gui}
   - {t: E, h: Shift}
   - {t: I, h: Alt}
-  - {t: O, h: Gui}
+  - {t: O, h: Shift}
   - ''''
   - '-'
   - Z
@@ -57,16 +57,16 @@ layers:
   - P
   - {t: Bspc, s: Del}
   - Tab
-  - {t: A, h: Gui}
+  - {t: A, h: Shift}
   - {t: S, h: Alt}
-  - {t: D, h: Shift}
-  - {t: F, h: Ctrl}
+  - {t: D, h: Ctrl}
+  - {t: F, h: Gui}
   - G
   - H
-  - {t: J, h: Ctrl}
+  - {t: J, h: Gui}
   - {t: K, h: Shift}
   - {t: L, h: Alt}
-  - {t: ;, h: Gui}
+  - {t: ;, h: Shift}
   - ''''
   - '-'
   - Z
@@ -98,22 +98,22 @@ layers:
   - '9'
   - '*'
   - '!'
-  - (
-  - )
+  - {t: '[', right: '{'}
+  - {t: ']', right: '}'}
   - $
   - '|'
   - {type: trans}
   - {type: trans}
-  - {t: '0', h: Gui}
+  - {t: '0', h: Shift}
   - {t: '4', h: Alt}
-  - {t: '5', h: Shift}
-  - {t: '6', h: Ctrl}
+  - {t: '5', h: Ctrl}
+  - {t: '6', h: Gui}
   - /
   - '@'
-  - {t: '[', h: Ctrl}
-  - {t: ']', h: Shift}
+  - {t: (, h: Gui}
+  - {t: ), h: Shift}
   - {t: '%', h: Alt}
-  - {t: '&', h: Gui}
+  - {t: '&', h: Shift}
   - '`'
   - {type: trans}
   - {type: trans}
@@ -147,10 +147,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: Gui, h: sticky}
-  - {t: Alt, h: sticky}
   - {t: Shift, h: sticky}
+  - {t: Alt, h: sticky}
   - {t: Ctrl, h: sticky}
+  - {t: Gui, h: sticky}
   - {type: trans}
   - {t: ←, h: Home}
   - {t: ↓, h: Ctl+End}
@@ -196,10 +196,10 @@ layers:
   - F6
   - F11
   - {type: trans}
-  - {t: Ctrl, h: sticky}
+  - {t: Gui, h: sticky}
   - {t: Shift, h: sticky}
   - {t: Alt, h: sticky}
-  - {t: Gui, h: sticky}
+  - {t: Shift, h: sticky}
   - {type: trans}
   - {type: trans}
   - PAUSE BREAK
