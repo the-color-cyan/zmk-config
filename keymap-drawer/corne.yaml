@@ -14,16 +14,16 @@ layers:
   - ;
   - {t: Bspc, s: Del}
   - Tab
-  - {t: A, h: Shift}
-  - {t: R, h: Alt}
-  - {t: S, h: Ctrl}
-  - {t: T, h: Gui}
+  - {t: A, h: Alt}
+  - {t: R, h: Shift}
+  - {t: S, h: Gui}
+  - {t: T, h: Ctrl}
   - G
   - M
-  - {t: N, h: Gui}
-  - {t: E, h: Ctrl}
-  - {t: I, h: Alt}
-  - {t: O, h: Shift}
+  - {t: N, h: Ctrl}
+  - {t: E, h: Gui}
+  - {t: I, h: Shift}
+  - {t: O, h: Alt}
   - ''''
   - '-'
   - Z
@@ -57,16 +57,16 @@ layers:
   - P
   - {t: Bspc, s: Del}
   - Tab
-  - {t: A, h: Shift}
-  - {t: S, h: Alt}
-  - {t: D, h: Ctrl}
-  - {t: F, h: Gui}
+  - {t: A, h: Alt}
+  - {t: S, h: Shift}
+  - {t: D, h: Gui}
+  - {t: F, h: Ctrl}
   - G
   - H
-  - {t: J, h: Gui}
-  - {t: K, h: Ctrl}
-  - {t: L, h: Alt}
-  - {t: ;, h: Shift}
+  - {t: J, h: Ctrl}
+  - {t: K, h: Gui}
+  - {t: L, h: Shift}
+  - {t: ;, h: Alt}
   - ''''
   - '-'
   - Z
@@ -104,16 +104,16 @@ layers:
   - '|'
   - {type: trans}
   - {type: trans}
-  - {t: '0', h: Shift}
-  - {t: '4', h: Alt}
-  - {t: '5', h: Ctrl}
-  - {t: '6', h: Gui}
+  - {t: Alt, h: sticky}
+  - {t: '4', h: Shift}
+  - {t: '5', h: Gui}
+  - {t: '6', h: Ctrl}
   - /
   - '@'
-  - {t: (, h: Gui}
-  - {t: ), h: Ctrl}
-  - {t: '%', h: Alt}
-  - {t: '&', h: Shift}
+  - {t: (, h: Ctrl}
+  - {t: ), h: Gui}
+  - {t: '%', h: Shift}
+  - {t: '&', h: Alt}
   - '`'
   - {type: trans}
   - {type: trans}
@@ -128,7 +128,7 @@ layers:
   - \
   - {type: trans}
   - {type: trans}
-  - {type: trans}
+  - '0'
   - {type: trans}
   - {type: held}
   - {type: trans}
@@ -147,10 +147,10 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: Shift, h: sticky}
   - {t: Alt, h: sticky}
-  - {t: Ctrl, h: sticky}
+  - {t: Shift, h: sticky}
   - {t: Gui, h: sticky}
+  - {t: Ctrl, h: sticky}
   - {type: trans}
   - {t: ←, h: Home}
   - {t: ↓, h: Ctl+End}
@@ -196,10 +196,10 @@ layers:
   - F6
   - F11
   - {type: trans}
-  - {t: Gui, h: sticky}
   - {t: Ctrl, h: sticky}
-  - {t: Alt, h: sticky}
+  - {t: Gui, h: sticky}
   - {t: Shift, h: sticky}
+  - {t: Alt, h: sticky}
   - {type: trans}
   - {type: trans}
   - PAUSE BREAK
