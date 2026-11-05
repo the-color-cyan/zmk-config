@@ -327,8 +327,7 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key tap">Spc</text>
 <a href="#Nav">
 <text x="0" y="38" class="key hold layer-activator">Nav</text>
-</a><text x="0" y="-38" class="key shifted"><tspan style="font-size: 88%">Sentence</tspan></text>
-</g>
+</a></g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">Enter</text>
@@ -550,8 +549,7 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key tap">Spc</text>
 <a href="#Nav">
 <text x="0" y="38" class="key hold layer-activator">Nav</text>
-</a><text x="0" y="-38" class="key shifted"><tspan style="font-size: 88%">Sentence</tspan></text>
-</g>
+</a></g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">Enter</text>
@@ -1160,12 +1158,12 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(644, 28)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Del</text>
-<text x="0" y="24" class="key hold">Ctl+Del</text>
+<text x="0" y="24" class="key hold">Opt+Del</text>
 </g>
 <g transform="translate(700, 35)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Bspc</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 88%">Ctl+Bspc</tspan></text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 88%">Opt+Bspc</tspan></text>
 </g>
 <g transform="translate(756, 49)" class="key trans keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1202,22 +1200,22 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(532, 98)" class="key keypos-18">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">←</text>
-<text x="0" y="24" class="key hold">Home</text>
+<text x="0" y="24" class="key hold">Cmd+←</text>
 </g>
 <g transform="translate(588, 91)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">↓</text>
-<text x="0" y="24" class="key hold">Ctl+End</text>
+<text x="0" y="24" class="key hold">Cmd+↓</text>
 </g>
 <g transform="translate(644, 84)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">↑</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 88%">Ctl+Home</tspan></text>
+<text x="0" y="24" class="key hold">Cmd+↑</text>
 </g>
 <g transform="translate(700, 91)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">→</text>
-<text x="0" y="24" class="key hold">End</text>
+<text x="0" y="24" class="key hold">Cmd+→</text>
 </g>
 <g transform="translate(756, 105)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

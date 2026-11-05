@@ -39,7 +39,7 @@ layers:
   - Esc
   - {t: Esc, h: Sys}
   - {t: Magic, h: Shift}
-  - {t: Spc, h: Nav, s: Sentence}
+  - {t: Spc, h: Nav}
   - {t: Enter, h: Numsym}
   - {t: Magic, h: Shift}
   - {t: Esc, h: Fn}
@@ -82,7 +82,7 @@ layers:
   - Esc
   - {t: Esc, h: Sys}
   - {t: Magic, h: Shift}
-  - {t: Spc, h: Nav, s: Sentence}
+  - {t: Spc, h: Nav}
   - {t: Enter, h: Numsym}
   - {t: Magic, h: Shift}
   - {t: Esc, h: Fn}
@@ -142,8 +142,8 @@ layers:
   - {type: trans}
   - Tab
   - PgUp
-  - {t: Del, h: Ctl+Del}
-  - {t: Bspc, h: Ctl+Bspc}
+  - {t: Del, h: Opt+Del}
+  - {t: Bspc, h: Opt+Bspc}
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -152,10 +152,10 @@ layers:
   - {t: Gui, h: sticky}
   - {t: Ctrl, h: sticky}
   - {type: trans}
-  - {t: ←, h: Home}
-  - {t: ↓, h: Ctl+End}
-  - {t: ↑, h: Ctl+Home}
-  - {t: →, h: End}
+  - {t: ←, h: Cmd+←}
+  - {t: ↓, h: Cmd+↓}
+  - {t: ↑, h: Cmd+↑}
+  - {t: →, h: Cmd+→}
   - Enter
   - {type: trans}
   - {type: trans}

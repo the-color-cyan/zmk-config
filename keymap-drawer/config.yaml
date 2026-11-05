@@ -17,9 +17,15 @@ parse_config:
     "&bt BT_SEL 3": BT 4
     "&bt BT_SEL 4": BT 5
 
-    "&kp LC(INS)": Copy
-    "&kp LC(X)": Cut
-    "&kp LS(INS)": Paste
+    "&kp LG(C)": Copy
+    "&kp LG(X)": Cut
+    "&kp LG(V)": Paste
+    "&kp LG(LEFT)": Cmd+←
+    "&kp LG(RIGHT)": Cmd+→
+    "&kp LG(UP)": Cmd+↑
+    "&kp LG(DOWN)": Cmd+↓
+    "&kp LA(BSPC)": Opt+Bspc
+    "&kp LA(DEL)": Opt+Del
 
     "&kp LG(LC(LEFT))": Prev Desk
     "&kp LG(LC(RIGHT))": Next Desk
@@ -28,7 +34,6 @@ parse_config:
 
     "&swapper": Next Win
     "&kp LS(TAB)": Prev Win
-    "&dot_spc": Sentence
     "&num_dance": { "t": "Numword", "s": "Sticky Num" }
     "&magic_shift": { "t": Magic, "h": "Shift" }
     "&smart_mouse": Smart Mouse

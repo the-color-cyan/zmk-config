@@ -10,13 +10,15 @@
 ## Features
 
 - [Timeless home row mods](https://github.com/urob/zmk-config?tab=readme-ov-file#timeless-homerow-mods)
+- macOS clipboard combos: Command+X (cut), Command+C (copy), Command+V (paste)
 - Hold-Taps on NAV layer
   - Taps register as `arrow keys`
-    - Holds register as `home`, `end`, and `beginning/end of document`
+    - Hold left/right for line start/end (Command+Left/Right)
+    - Hold up/down for document start/end (Command+Up/Down)
   - Taps register as `backspace` and `del`
-    - Holds register as `delete word backward/forward`
+    - Holds delete word backward/forward (Option+Backspace/Delete)
 - Mod-Tap on layer keys
-  - NAV/space
+  - NAV/space (plain space, including with Shift; no sentence macro)
   - NUMSYM/return
   - {FN/SYS}/Esc
 - Magic-Shift
