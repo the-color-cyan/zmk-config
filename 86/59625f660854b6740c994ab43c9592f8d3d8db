@@ -1,0 +1,24 @@
+README.md
+  h_441bd1542c405a 13,16-17,19,21
+config/combos.dtsi
+  h_441bd1542c405a 20-22
+config/corne.keymap
+  h_441bd1542c405a 98-101,103,108-109,150,162
+keymap-drawer/config.yaml
+  h_441bd1542c405a 20-28
+keymap-drawer/corne.svg
+  h_441bd1542c405a 330,552,1161,1166,1203,1208,1213,1218
+keymap-drawer/corne.yaml
+  h_441bd1542c405a 42,85,145-146,155-158
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8659625f660854b6740c994ab43c9592f8d3d8db",
+  "prompts": {},
+  "humans": {
+    "h_441bd1542c405a": {
+      "author": "cyan <cyan@cyan.fish>"
+    }
+  }
+}
